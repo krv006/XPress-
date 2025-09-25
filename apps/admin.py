@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 from import_export.admin import ImportExportModelAdmin
 
-from apps.models import Footer
+from apps.models import Footer, FooterSimple, Partners
 from apps.models.main_model import MainPage, ProfessionalTeam
 from apps.resources import MainPageResource
 
@@ -19,4 +19,14 @@ class ProfessionalTeamModelAdmin(ModelAdmin):
 
 @admin.register(Footer)
 class FooterModelAdmin(ModelAdmin):
+    pass
+
+
+@admin.register(FooterSimple)
+class FooterSimpleModelAdmin(ModelAdmin):
+    pass
+
+
+@admin.register(Partners)
+class PartnersModelAdmin(ModelAdmin):
     pass

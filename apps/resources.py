@@ -1,10 +1,11 @@
 from django.utils.html import strip_tags
-from import_export import resources, fields
+from import_export import fields
+from import_export.resources import ModelResource
 
 from apps.models import MainPage
 
 
-class MainPageResource(resources.ModelResource):
+class MainPageResource(ModelResource):
     description = fields.Field(
         column_name='description'
     )
