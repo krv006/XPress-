@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-from root.drf_settings import *
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,6 +23,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_spectacular',
     'django_ckeditor_5',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -93,6 +93,10 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from import_export.formats.base_formats import XLSX, CSV
+
+IMPORT_FORMATS = [CSV, XLSX]
 
 customColorPalette = [
     {
@@ -186,6 +190,12 @@ CKEDITOR_5_CONFIGS = {
             'reversed': 'true',
         }
     }
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+    # "theme": "slate",
+
 }
 
 JAZZMIN_SETTINGS = {
