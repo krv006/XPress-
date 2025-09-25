@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-
+from root.drf_settings import *
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-5eylkkg$cwn=$1v9q)bkupzx84djq=l6d*%y8#r#btc789pms^'

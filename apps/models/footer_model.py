@@ -1,4 +1,4 @@
-from django.db.models import Model, CharField
+from django.db.models import Model, CharField, ImageField, IntegerField
 
 
 class Footer(Model):
@@ -10,3 +10,12 @@ class Footer(Model):
     youtube_link = CharField(max_length=200, help_text='Youtube link')
 
 
+class FooterSimple(Model):
+    cars_transported = IntegerField()
+    satisfied = IntegerField()
+    carrier_network = IntegerField()
+    star_reviews = IntegerField()
+
+
+class Partners(Model):
+    image = ImageField(upload_to='partners/')

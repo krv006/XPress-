@@ -16,4 +16,10 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Your project description',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+    # 'EXCLUDE_PATHS': [
+    #     r'^/admin/',
+    #     r'^/ckeditor5/',
+    #     r'^/$',
+    #     r'^/api/docs/',
+    # ],
 }
