@@ -13,3 +13,25 @@ class ProfessionalTeam(Model):
     name = CharField(max_length=500)
     phone_number = CharField(max_length=100, help_text='Misol uchun: (123) 456-7891')
     by_checking = BooleanField(default=False)
+
+
+class ChooseXpress(Model):
+    title = CharField(max_length=500)
+    description = CKEditor5Field()
+
+
+class MakesUs(Model):
+    description = CKEditor5Field()
+
+
+class MainAboutUs(Model):
+    title = CharField(max_length=500)
+    description = CKEditor5Field()
+
+
+class AutoTransport(Model):
+    description = CKEditor5Field()
+
+
+class SimpleSteps(Model):
+    description = CKEditor5Field()
