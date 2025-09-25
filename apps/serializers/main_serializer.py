@@ -1,12 +1,12 @@
 from rest_framework.serializers import ModelSerializer
 
-from apps.models import Main_Page
+from apps.models import MainPage
 from apps.models.main_model import ProfessionalTeam
 
 
 class MainPageModelSerializer(ModelSerializer):
     class Meta:
-        model = Main_Page
+        model = MainPage
         fields = '__all__'
 
 
